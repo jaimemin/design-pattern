@@ -8,7 +8,7 @@ package com.tistory.jaimemin.designpattern.factorymethod.after;
  * Q. 팩토리 메서드 패턴을 적용했을 때 장단점
  * 장점
  * 확장이 열려있고 변경에 닫혀있는 OCP 원칙을 적용해서 기존 코드를 건드리지 않고 새로운 인스턴스를 다른 방법으로 확장 가능
- * -> Product와 Creator 간의 결합을 느슨하게 가져갔기 때문 (loosly coupling)
+ * -> Product와 Creator 간의 결합을 느슨하게 가져갔기 때문 (loosely coupled)
  *
  * 단점
  * 역할을 나누다보니 클래스가 늘어나는 단점을 피할 수 없음
