@@ -26,15 +26,15 @@ public class App {
 
 		System.out.println(settings == settingsGeneratedByReflector);
 
-		// EnumSettings enumSettings = null;
-		// Constructor<?>[] declaredConstructors = EnumSettings.class.getDeclaredConstructors();
-		//
-		// for (Constructor<?> c : declaredConstructors) {
-		// 	c.setAccessible(true);
-		// 	enumSettings = (EnumSettings) c.newInstance("INSTANCE");
-		// }
-		//
-		// System.out.println(EnumSettings.INSTANCE == enumSettings);
+		EnumSettings enumSettings = null;
+		Constructor<?>[] declaredConstructors = EnumSettings.class.getDeclaredConstructors();
+
+		for (Constructor<?> c : declaredConstructors) {
+			c.setAccessible(true);
+			enumSettings = (EnumSettings)c.newInstance("INSTANCE");
+		}
+
+		System.out.println(EnumSettings.INSTANCE == enumSettings);
 
 		/**
 		 * 직렬화와 역직렬화를 통해 싱글턴 패턴 깨트릴 수 있음
