@@ -1,0 +1,1 @@
+package com.tistory.jaimemin.designpattern.structural_patterns.adapter;
